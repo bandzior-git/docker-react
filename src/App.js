@@ -11,6 +11,7 @@ function App() {
         </p>
         <p>
           Mam bobera. Ngnixem tera.
+          To je ficzer 2.
         </p>
         <a
           className="App-link"
