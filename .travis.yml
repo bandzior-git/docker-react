@@ -1,0 +1,10 @@
+sudo: required
+language: generic
+services:
+  - docker
+
+before_install:
+  - docker build -t bandzior/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true bandzior/docker-react npm run test -- --coverage
